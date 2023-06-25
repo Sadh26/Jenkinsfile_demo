@@ -4,6 +4,7 @@ pipeline {
     stage('Package 1') {
       steps {
         git(url: 'https://github.com/Sadh26/LabviewJenkinsExample.git', branch: 'master')
+        bat '.\\\\Scripts\\\\Build.bat'
       }
     }
 
